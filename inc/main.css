@@ -1,0 +1,338 @@
+/*
+#575757 - gray
+#2F2F31 - dark gray
+#253C0A - green
+#608854 - light green
+#FCDC85 -yellow
+*/
+
+@font-face {
+  font-family: 'niagara_solidregular';
+  src: url('niagsol-webfont.eot');
+  src: url('niagsol-webfont.eot?#iefix') format('embedded-opentype'),
+       url('niagsol-webfont.woff2') format('woff2'),
+       url('niagsol-webfont.woff') format('woff'),
+       url('niagsol-webfont.ttf') format('truetype'),
+       url('niagsol-webfont.svg#niagara_solidregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+BODY {
+  margin: 0;
+  padding: 0;
+  background: #253C0A url(../images/background.gif) repeat-x;
+  color: #575757;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 10px; /* 100% = 16px; 95% = 15px; 90% = 14px; 80% = 13px; 75% = 12px; */
+  line-height: 1.4em;
+}
+
+IMG {
+  border: 0;
+}
+
+HR {
+  border: none 0;
+  border-top: 1pt solid #000000; /* the border */
+  height: 1pt; /* whatever the total width of the border-top and border-bottom equal */
+}
+
+A:link, A:visited {
+  color: #608854;
+  text-decoration: none;
+}
+
+A:hover, A:active {
+  color: #253C0A;
+  text-decoration: none;
+}
+
+A[href$=".pdf"] {
+  background: transparent url(../images/pdf.png) center left no-repeat;
+  background-size: auto 1em;
+  padding-left: 1.4em;
+}
+
+H1 {
+  font-size: 16px;
+  color: #666666;
+  margin: 0.4em 0;
+}
+
+H2 {
+  font-size: 14px;
+  color: #148457;
+  margin: 0 0 0.4em 0;
+}
+
+UL {
+  margin: 0 0 0 1em;
+  padding: 0 0 0 1em;
+}
+
+input {
+  font-size: 9px;
+  border: 0;
+  border-bottom: 1px solid #888;
+  background-color: #FAFAFA;
+}
+
+#wrap {
+  margin: 24px auto 4px;
+  padding: 4px 5px;
+  width: 761px;
+  background: #FFFFFF;
+  border: 2px solid #FCDC85;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  -webkit-box-shadow: 0 0 5px -1px #000000;
+  -moz-box-shadow: 0 0 5px -1px #000000;
+  box-shadow: 0 0 5px -1px #000000;
+}
+
+#logo {
+  margin: 9px 0 0 8px;
+  float: left;
+}
+
+#header-image {
+  float: right;
+}
+
+#menubar {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  background: #2F2F31;
+  color: #FFFFFF;
+  font-family: 'niagara_solidregular';
+  font-size: 23px;
+  line-height: 23px;
+  padding: 1px 6px;
+  margin-bottom: 10px;
+}
+
+#slogan {
+  float: left;
+}
+
+.clearfix:before, .clearfix:after,
+HEADER:before, HEADER:after,
+NAV:before, NAV:after { content: ""; display: table; }
+.clearfix:after, HEADER:after, NAV:after { clear: both; }
+.clearfix, HEADER, NAV { zoom: 1; }
+
+.collapse {
+  height: auto;
+  -webkit-transition: height 0.35s ease;
+     -moz-transition: height 0.35s ease;
+       -o-transition: height 0.35s ease;
+          transition: height 0.35s ease;
+}
+
+.collapse.in {
+  height: 0;
+}
+
+#menu-toggle {
+  display: none;
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  z-index: 99;
+  cursor: pointer;
+  border: 0;
+  background: url(../images/menu-toggle.png) top left no-repeat;
+  background-size: 2em;
+  height: 2em;
+  width: 2em;
+}
+
+.icon-bar {
+  display: block;
+  margin: 0.4em 0;
+  width: 2.5em;
+  height: 0.4em;
+  background-color: #FFFFFF;
+  -webkit-border-radius: 5pt;
+  -moz-border-radius: 5pt;
+  border-radius: 5pt;
+}
+
+#menu UL {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  float: right;
+}
+
+#menu UL LI {
+  float: left;
+  padding-left: 0.9em;
+  position: relative;
+  z-index: 99;
+}
+
+#menu UL LI A:link, #menu UL LI A:visited,
+#menu UL LI UL LI A:link, #menu UL LI UL LI A:visited {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+#menu UL LI:hover A,
+#menu UL LI UL LI A:hover {
+  color: #888888;
+  text-decoration: none;
+}
+
+#menu UL LI UL {
+  display: none;
+  padding-bottom: 0.1em;
+}
+
+#menu UL LI:hover UL {
+  display: block;
+  position: absolute;
+  top: 1.4em;
+  left: 0;
+}
+
+#menu UL LI UL LI {
+  float: none;
+  padding: 0.2em 0;
+  font-size: 0.8em;
+  height: 1em;
+  line-height: 1em;
+}
+
+#menu UL LI UL LI A {
+  display: block;
+}
+
+ASIDE {
+  float: left;
+  width: 214px;
+  height: 259px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  background: -webkit-linear-gradient(#DBE5CC, #A7B697);
+  background: -moz-linear-gradient(#DBE5CC, #A7B697);
+  background: -o-linear-gradient(#DBE5CC, #A7B697);
+  background: linear-gradient(#DBE5CC, #A7B697);
+  _background: #DBE5CC; /* IE6 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#DBE5CC', endColorstr='#A7B697', GradientType=0); /* IE6-9 */
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  line-height: 2em;
+  _line-height: 1em; /* IE6 */
+  margin-bottom: 15px;
+  _padding-top: 15px; /* IE6 */
+}
+
+ASIDE UL {
+  margin: 0;
+  padding: 0 12px;
+  list-style-type: none;
+}
+
+ASIDE UL LI {
+  border-top: 1px dashed #EAF0E2;
+  _border-top: none; /* IE6 */
+}
+
+ASIDE UL LI:first-child {
+  border-top: none;
+}
+
+ASIDE UL LI A:link, ASIDE UL LI A:visited {
+  display: block;
+  color: #444444;
+}
+
+ASIDE UL LI A:hover, ASIDE UL LI A:active {
+  color: #FFFFFF;
+}
+
+ASIDE UL LI A SPAN {
+  color: #608853;
+}
+
+ARTICLE {
+  float: right;
+  width: 535px;
+  margin-bottom: 15px;
+}
+
+#news {
+  background: #F0EFF0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  padding: 13px 10px;
+}
+
+#rightcol {
+  float: right;
+  margin-left: 10px;
+  width: 184px;
+  text-align: center;
+}
+
+#gallery IMG {
+  width: 165px;
+  margin: 0 10px 10px 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+FOOTER {
+  margin: 0 auto;
+  width: 761px;
+}
+
+#copyright {
+  float: left;
+}
+
+#bottom-menu {
+  float: right;
+}
+
+#bottom-menu A:hover, #bottom-menu A:active {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+#fireworks {
+  width: 535px;
+  height: 259px;
+  background: url(../images/fireworks.gif) top center no-repeat;
+  background-size: 535px 259px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+#fireworks H1 {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 30px;
+  line-height: 1.2em;
+  font-weight: normal;
+}

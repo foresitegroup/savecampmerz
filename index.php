@@ -4,7 +4,7 @@ include "header.php";
 ?>
 
 <div id="fireworks">
-  <h1>Happy 80th Anniversary of the establishment of Camp Merz</h1>
+  <h1>Jim Butterfield (1932-2015)<br><div style="font-size: 80%; line-height: 1.2em; padding: 0 1em;">Thank you for your years of dedication in preserving the legacy of Frank Merz in the establishment of Camp Merz.</div></h1>
 </div>
 <!-- <div class="cycle-slideshow" data-cycle-timeout="6000" data-cycle-speed="1500">
   <img src="images/slide1.jpg" alt="">
